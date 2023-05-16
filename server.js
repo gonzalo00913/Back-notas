@@ -58,7 +58,6 @@ app.delete("/notas/:id", (request, response) => {
 
 
 
-const PORT = 3001;
-app.listen(PORT, () => {
-  console.log(`El servidor ha iniciado en el puerto ${PORT}`);
+app.listen(process.env.PORT || 3001, () => {
+  console.log(`El servidor ha iniciado en el puerto ${process.env.PORT || 3001}`);
 });
